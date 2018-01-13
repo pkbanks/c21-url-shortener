@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+urls = [
+  'https://www.reddit.com/r/Bitcoin/',
+  'https://twitter.com/search?q=bitcoin&src=typd',
+  'https://news.bitcoin.com/how-to-dollar-cost-average-buy-and-hodl-cryptocurrency-like-a-boss/'
+]
+
+urls.each do |url|
+  Url.create(long_url: url)
+end
+
